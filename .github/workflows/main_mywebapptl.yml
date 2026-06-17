@@ -21,7 +21,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.4'
+          php-version: '8.5'
 
       - name: Check if composer.json exists
         id: check_files
@@ -57,4 +57,4 @@ jobs:
           app-name: 'mywebapptl'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E10616CF32E4ECF89129E331BF2A8E4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_32DE2DE1625C422187C1EDE44B7E30DC }}
